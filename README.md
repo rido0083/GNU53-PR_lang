@@ -20,7 +20,7 @@
 
 ---------------------------------------------------------------
 
-      CREATE TABLE `구누접두어_srd_lang` (
+      CREATE TABLE `그누접두어_srd_lang` (
       `id` int(16) NOT NULL,
       `include` varchar(255) NOT NULL,
       `lang` char(10) NOT NULL,
