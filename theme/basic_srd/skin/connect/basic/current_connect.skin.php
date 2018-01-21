@@ -32,7 +32,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$connect_skin_url.'/style.css">',
     <?php
     }
     if ($i == 0)
-        echo "<li class=\"empty_li\">현재 접속자가 없습니다.</li>";
+        echo "<li class=\"empty_li\">'._lang('현재 접속자가 없습니다.').'</li>";
     ?>
     </ul>
 </div>

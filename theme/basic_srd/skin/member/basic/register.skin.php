@@ -15,56 +15,57 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
     <form  name="fregister" id="fregister" action="<?php echo $register_action_url ?>" onsubmit="return fregister_submit(this);" method="POST" autocomplete="off">
 
-    <p>회원가입약관 및 개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.</p>
+    <p><?php echo _lang('회원가입약관 및 개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.')?></p>
     <div id="fregister_chkall">
-        <label for="chk_all">전체선택</label>
+        <label for="chk_all"><?php echo _lang('전체선택')?></label>
         <input type="checkbox" name="chk_all"  value="1"  id="chk_all">
 
     </div>
     <section id="fregister_term">
-        <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> 회원가입약관</h2>
-        <textarea readonly><?php echo get_text($config['cf_stipulation']) ?></textarea>
+        <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> <?php echo _lang('회원가입약관')?></h2>
+        <textarea readonly><?php echo get_text(_lang($config['cf_stipulation'])) ?></textarea>
         <fieldset class="fregister_agree">
-            <label for="agree11">회원가입약관의 내용에 동의합니다.</label>
+            <label for="agree11"><?php echo _lang('회원가입약관의 내용에 동의합니다.')?></label>
             <input type="checkbox" name="agree" value="1" id="agree11">
         </fieldset>
     </section>
 
     <section id="fregister_private">
-        <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> 개인정보처리방침안내</h2>
+        <h2><i class="fa fa-check-square-o" aria-hidden="true"></i> <?php echo _lang('개인정보처리방침안내')?></h2>
         <div>
             <table>
-                <caption>개인정보처리방침안내</caption>
+                <caption><?php echo _lang('개인정보처리방침안내')?></caption>
                 <thead>
                 <tr>
-                    <th>목적</th>
-                    <th>항목</th>
-                    <th>보유기간</th>
+                    <th><?php echo _lang('목적')?></th>
+                    <th><?php echo _lang('항목')?></th>
+                    <th><?php echo _lang('보유기간')?></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>이용자 식별 및 본인여부 확인</td>
-                    <td>아이디, 이름, 비밀번호</td>
-                    <td>회원 탈퇴 시까지</td>
+                    <td><?php echo _lang('이용자 식별 및 본인여부 확인')?></td>
+                    <td><?php echo _lang('아이디, 이름, 비밀번호')?></td>
+                    <td><?php echo _lang('회원 탈퇴 시까지')?></td>
                 </tr>
                 <tr>
-                    <td>고객서비스 이용에 관한 통지,<br>CS대응을 위한 이용자 식별</td>
-                    <td>연락처 (이메일, 휴대전화번호)</td>
-                    <td>회원 탈퇴 시까지</td>
+                    <td><?php echo _lang('고객서비스 이용에 관한 통지,')?><br>
+                        <?php echo _lang('CS대응을 위한 이용자 식별')?></td>
+                    <td><?php echo _lang('연락처 (이메일, 휴대전화번호)')?></td>
+                    <td><?php echo _lang('회원 탈퇴 시까지')?></td>
                 </tr>
                 </tbody>
             </table>
         </div>
 
         <fieldset class="fregister_agree">
-            <label for="agree21">개인정보처리방침안내의 내용에 동의합니다.</label>
+            <label for="agree21"><?php echo _lang('개인정보처리방침안내의 내용에 동의합니다.')?></label>
             <input type="checkbox" name="agree2" value="1" id="agree21">
         </fieldset>
     </section>
 
     <div class="btn_confirm">
-        <input type="submit" class="btn_submit" value="회원가입">
+        <input type="submit" class="btn_submit" value="<?php echo _lang('회원가입')?>">
     </div>
 
     </form>
@@ -73,13 +74,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     function fregister_submit(f)
     {
         if (!f.agree.checked) {
-            alert("회원가입약관의 내용에 동의하셔야 회원가입 하실 수 있습니다.");
+            alert("<?php echo _lang('회원가입약관의 내용에 동의하셔야 회원가입 하실 수 있습니다.')?>");
             f.agree.focus();
             return false;
         }
 
         if (!f.agree2.checked) {
-            alert("개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.");
+            alert("<?php echo _lang('개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.')?>");
             f.agree2.focus();
             return false;
         }

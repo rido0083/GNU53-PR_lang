@@ -16,18 +16,18 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                 <a href="<?php echo $list[$i]['opener_href_wr_id'] ?>" class="scrap_tit" target="_blank" onclick="opener.document.location.href='<?php echo $list[$i]['opener_href_wr_id'] ?>'; return false;"><?php echo $list[$i]['subject'] ?></a>
                 <a href="<?php echo $list[$i]['opener_href'] ?>" class="scrap_cate" target="_blank" onclick="opener.document.location.href='<?php echo $list[$i]['opener_href'] ?>'; return false;"><?php echo $list[$i]['bo_subject'] ?></a>
                 <span class="scrap_datetime"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $list[$i]['ms_datetime'] ?></span>
-                <a href="<?php echo $list[$i]['del_href'];  ?>" onclick="del(this.href); return false;" class="scrap_del"><i class="fa fa-times-circle" aria-hidden="true"></i><span class="sound_only">삭제</span></a>
+                <a href="<?php echo $list[$i]['del_href'];  ?>" onclick="del(this.href); return false;" class="scrap_del"><i class="fa fa-times-circle" aria-hidden="true"></i><span class="sound_only"><?php echo _lang('삭제')?></span></a>
             </li>
             <?php }  ?>
 
-            <?php if ($i == 0) echo "<li class=\"empty_li\">자료가 없습니다.</li>";  ?>
+            <?php if ($i == 0) echo "<li class=\"empty_li\">'._lang('자료가 없습니다.').'</li>";  ?>
         </ul>
     </div>
 
     <?php echo get_paging($config['cf_write_pages'], $page, $total_page, "?$qstr&amp;page="); ?>
 
     <div class="win_btn">
-        <button type="button" onclick="window.close();" class="btn_close">창닫기</button>
+        <button type="button" onclick="window.close();" class="btn_close"><?php echo _lang('창닫기')?></button>
     </div>
 </div>
 <!-- } 스크랩 목록 끝 -->

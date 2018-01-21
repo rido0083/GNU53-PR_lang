@@ -12,19 +12,19 @@ add_stylesheet('<link rel="stylesheet" href="'.$new_skin_url.'/style.css">', 0);
 
 <!-- 전체게시물 검색 시작 { -->
 <fieldset id="new_sch">
-    <legend>상세검색</legend>
+    <legend><?php echo _lang('상세검색')?></legend>
     <form name="fnew" method="get">
     <?php echo $group_select ?>
-    <label for="view" class="sound_only">검색대상</label>
+    <label for="view" class="sound_only"><?php echo _lang('검색대상')?></label>
     <select name="view" id="view">
-        <option value="">전체게시물
-        <option value="w">원글만
-        <option value="c">코멘트만
+        <option value=""><?php echo _lang('전체게시물')?>
+        <option value="w"><?php echo _lang('원글만')?>
+        <option value="c"><?php echo _lang('코멘트만')?>
     </select>
-    <label for="mb_id" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+    <label for="mb_id" class="sound_only"><?php echo _lang('검색어')?><strong class="sound_only"> <?php echo _lang('필수')?></strong></label>
     <input type="text" name="mb_id" value="<?php echo $mb_id ?>" id="mb_id" required class="frm_input" size="40">
-    <button type="submit" class="btn_submit"><i class="fa fa-search" aria-hidden="true"></i> 검색</button>
-    <p>회원 아이디만 검색 가능</p>
+    <button type="submit" class="btn_submit"><i class="fa fa-search" aria-hidden="true"></i> <?php echo _lang('검색')?></button>
+    <p><?php echo _lang('건')?>회원 아이디만 검색 가능</p>
     </form>
     <script>
     /* 셀렉트 박스에서 자동 이동 해제
@@ -55,15 +55,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$new_skin_url.'/style.css">', 0);
     <tr>
         <?php if ($is_admin) { ?>
         <th scope="col">
-            <label for="all_chk" class="sound_only">목록 전체</label>
+            <label for="all_chk" class="sound_only"><?php echo _lang('목록 전체')?></label>
             <input type="checkbox" id="all_chk">
         </th>
         <?php } ?>
-        <th scope="col">그룹</th>
-        <th scope="col">게시판</th>
-        <th scope="col">제목</th>
-        <th scope="col">이름</th>
-        <th scope="col">일시</th>
+        <th scope="col"><?php echo _lang('그룹')?></th>
+        <th scope="col"><?php echo _lang('게시판')?></th>
+        <th scope="col"><?php echo _lang('제목')?></th>
+        <th scope="col"><?php echo _lang('이름')?></th>
+        <th scope="col"><?php echo _lang('일시')?></th>
     </tr>
     </thead>
     <tbody>
@@ -78,7 +78,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$new_skin_url.'/style.css">', 0);
     <tr>
         <?php if ($is_admin) { ?>
         <td class="td_chk">
-            <label for="chk_bn_id_<?php echo $i; ?>" class="sound_only"><?php echo $num?>번</label>
+            <label for="chk_bn_id_<?php echo $i; ?>" class="sound_only"><?php echo $num?><?php echo _lang('번')?></label>
             <input type="checkbox" name="chk_bn_id[]" value="<?php echo $i; ?>" id="chk_bn_id_<?php echo $i; ?>">
             <input type="hidden" name="bo_table[<?php echo $i; ?>]" value="<?php echo $list[$i]['bo_table']; ?>">
             <input type="hidden" name="wr_id[<?php echo $i; ?>]" value="<?php echo $list[$i]['wr_id']; ?>">
@@ -93,7 +93,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$new_skin_url.'/style.css">', 0);
     <?php }  ?>
 
     <?php if ($i == 0)
-        echo '<tr><td colspan="'.$colspan.'" class="empty_table">게시물이 없습니다.</td></tr>';
+        echo '<tr><td colspan="'.$colspan.'" class="empty_table">'._lang('게시물이 없습니다.').'</td></tr>';
     ?>
     </tbody>
     </table>
@@ -101,7 +101,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$new_skin_url.'/style.css">', 0);
 
 <?php if ($is_admin) { ?>
 <div class="sir_bw02 sir_bw">
-    <button type="submit" onclick="document.pressed=this.value" class="btn_b01 btn"><i class="fa fa-trash-o" aria-hidden="true"></i><span class="sound_only">선택삭제</span></button>
+    <button type="submit" onclick="document.pressed=this.value" class="btn_b01 btn"><i class="fa fa-trash-o" aria-hidden="true"></i><span class="sound_only"><?php echo _lang('선택삭제')?></span></button>
 </div>
 <?php } ?>
 </form>
@@ -125,11 +125,11 @@ function fnew_submit(f)
     }
 
     if (!cnt) {
-        alert(document.pressed+"할 게시물을 하나 이상 선택하세요.");
+        alert(document.pressed+"<?php echo _lang('할 게시물을 하나 이상 선택하세요.')?>");
         return false;
     }
 
-    if (!confirm("선택한 게시물을 정말 "+document.pressed+" 하시겠습니까?\n\n한번 삭제한 자료는 복구할 수 없습니다")) {
+    if (!confirm("<?php echo _lang('선택한 게시물을 정말')?> "+document.pressed+" <?php echo _lang('하시겠습니까?\n\n한번 삭제한 자료는 복구할 수 없습니다')?>")) {
         return false;
     }
 

@@ -7,17 +7,17 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 10);
 ?>
 
 <div class="notice">
-    <h2><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=<?php echo $bo_table ?>"><i class="fa fa-bullhorn" aria-hidden="true"></i><span class="sound_only"><?php echo $bo_subject ?></span></a></h2>
+    <h2><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=<?php echo $bo_table ?>"><i class="fa fa-bullhorn" aria-hidden="true"></i><span class="sound_only"><?php echo _lang($bo_subject) ?></span></a></h2>
     <ul>
     <?php for ($i=0; $i<count($list); $i++) {  ?>
         <li>
             <?php
             if ($list[$i]['icon_secret']) echo "<span class=\"lock_icon\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i></span> ";
-            if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
+            if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">'._lang('새글').'</span></span>";
              //echo $list[$i]['icon_reply']." ";
             echo "<a href=\"".$list[$i]['href']."\">";
             if ($list[$i]['is_notice'])
-                echo "<strong>".$list[$i]['subject']."</strong>";
+                echo "<strong>"._lang($list[$i]['subject'])."</strong>";
             else
                 echo $list[$i]['subject'];
 
@@ -36,7 +36,7 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 10);
         </li>
     <?php }  ?>
     <?php if (count($list) == 0) { //게시물이 없을 때  ?>
-    <li class="empty_li">게시물이 없습니다.</li>
+    <li class="empty_li"><?php echo _lang('게시물이 없습니다.')?></li>
     <?php }  ?>
     </ul>
 

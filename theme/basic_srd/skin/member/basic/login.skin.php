@@ -13,14 +13,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     <input type="hidden" name="url" value="<?php echo $login_url ?>">
 
     <fieldset id="login_fs">
-        <legend>회원로그인</legend>
-        <label for="login_id" class="sound_only">회원아이디<strong class="sound_only"> 필수</strong></label>
-        <input type="text" name="mb_id" id="login_id" required class="frm_input required" size="20" maxLength="20" placeholder="아이디">
-        <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
-        <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호">
-        <input type="submit" value="로그인" class="btn_submit">
+        <legend><?php echo _lang('회원로그인')?></legend>
+        <label for="login_id" class="sound_only"><?php echo _lang('회원아이디')?><strong class="sound_only"> <?php echo _lang('필수')?></strong></label>
+        <input type="text" name="mb_id" id="login_id" required class="frm_input required" size="20" maxLength="20" placeholder="<?php echo _lang('아이디')?>">
+        <label for="login_pw" class="sound_only"><?php echo _lang('비밀번호')?><strong class="sound_only"> <?php echo _lang('필수')?></strong></label>
+        <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="<?php echo _lang('비밀번호')?>">
+        <input type="submit" value="<?php echo _lang('로그인')?>" class="btn_submit">
         <input type="checkbox" name="auto_login" id="login_auto_login">
-        <label for="login_auto_login">자동로그인</label>
+        <label for="login_auto_login"><?php echo _lang('자동로그인')?></label>
     </fieldset>
 
     <?php
@@ -29,9 +29,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     ?>
 
     <aside id="login_info">
-        <h2>회원로그인 안내</h2>
-            <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost">아이디 비밀번호 찾기</a>
-            <a href="./register.php">회원 가입</a>
+        <h2><?php echo _lang('회원로그인 안내')?></h2>
+            <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost"><?php echo _lang('아이디 비밀번호 찾기')?></a>
+            <a href="./register.php"><?php echo _lang('회원 가입')?></a>
         </div>
     </aside>
 
@@ -45,21 +45,21 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <?php if (preg_match("/orderform.php/", $url)) { ?>
 
     <section id="mb_login_notmb" class="mbskin">
-        <h2>비회원 구매</h2>
+        <h2><?php echo _lang('비회원 구매')?></h2>
 
         <p>
-            비회원으로 주문하시는 경우 포인트는 지급하지 않습니다.
+            <?php echo _lang('비회원으로 주문하시는 경우 포인트는 지급하지 않습니다.')?>
         </p>
 
         <div id="guest_privacy">
             <?php echo $default['de_guest_privacy']; ?>
         </div>
 
-        <label for="agree">개인정보수집에 대한 내용을 읽었으며 이에 동의합니다.</label>
+        <label for="agree"><?php echo _lang('개인정보수집에 대한 내용을 읽었으며 이에 동의합니다.')?></label>
         <input type="checkbox" id="agree" value="1">
 
         <div class="btn_confirm">
-            <a href="javascript:guest_submit(document.flogin);" class="btn_submit">비회원으로 구매하기</a>
+            <a href="javascript:guest_submit(document.flogin);" class="btn_submit"><?php echo _lang('비회원으로 구매하기')?></a>
         </div>
 
         <script>
@@ -67,7 +67,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         {
             if (document.getElementById('agree')) {
                 if (!document.getElementById('agree').checked) {
-                    alert("개인정보수집에 대한 내용을 읽고 이에 동의하셔야 합니다.");
+                    alert("<?php echo _lang('개인정보수집에 대한 내용을 읽고 이에 동의하셔야 합니다.')?>");
                     return;
                 }
             }
@@ -81,24 +81,24 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
     <?php } else if (preg_match("/orderinquiry.php$/", $url)) { ?>
     <div class="mbskin" id="mb_login_od_wr">
-        <h2>비회원 주문조회 </h2>
+        <h2><?php echo _lang('비회원 주문조회')?> </h2>
 
         <fieldset id="mb_login_od">
-            <legend>비회원 주문조회</legend>
+            <legend><?php echo _lang('비회원 주문조회')?></legend>
 
             <form name="forderinquiry" method="post" action="<?php echo urldecode($url); ?>" autocomplete="off">
 
-            <label for="od_id" class="od_id sound_only">주문서번호<strong class="sound_only"> 필수</strong></label>
-            <input type="text" name="od_id" value="<?php echo $od_id; ?>" id="od_id" required class="frm_input required" size="20" placeholder="주문서번호">
-            <label for="id_pwd" class="od_pwd sound_only" >비밀번호<strong class="sound_only"> 필수</strong></label>
-            <input type="password" name="od_pwd" size="20" id="od_pwd" required class="frm_input required" placeholder="비밀번호">
-            <input type="submit" value="확인" class="btn_submit">
+            <label for="od_id" class="od_id sound_only"><?php echo _lang('주문서번호')?><strong class="sound_only"> <?php echo _lang('필수')?></strong></label>
+            <input type="text" name="od_id" value="<?php echo $od_id; ?>" id="od_id" required class="frm_input required" size="20" placeholder="<?php echo _lang('주문서번호')?>">
+            <label for="id_pwd" class="od_pwd sound_only" ><?php echo _lang('비밀번호')?><strong class="sound_only"> <?php echo _lang('필수')?></strong></label>
+            <input type="password" name="od_pwd" size="20" id="od_pwd" required class="frm_input required" placeholder="<?php echo _lang('비밀번호')?>">
+            <input type="submit" value="<?php echo _lang('확인')?>" class="btn_submit">
 
             </form>
         </fieldset>
 
         <section id="mb_login_odinfo">
-            <p>메일로 발송해드린 주문서의 <strong>주문번호</strong> 및 주문 시 입력하신 <strong>비밀번호</strong>를 정확히 입력해주십시오.</p>
+            <p><?php echo _lang('메일로 발송해드린 주문서의')?> <strong><?php echo _lang('주문번호')?></strong> <?php echo _lang('')?> <strong><?php echo _lang('비밀번호')?></strong><?php echo _lang('를 정확히 입력해주십시오.')?></p>
         </section>
 
     </div>
@@ -115,7 +115,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 $(function(){
     $("#login_auto_login").click(function(){
         if (this.checked) {
-            this.checked = confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?");
+            this.checked = confirm("<?php echo _lang('자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?')?>");
         }
     });
 });
