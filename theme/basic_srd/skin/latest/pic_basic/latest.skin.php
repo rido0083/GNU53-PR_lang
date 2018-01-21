@@ -19,7 +19,7 @@ $thumb_height = 150;
         $img = $thumb['src'];
     } else {
         $img = G5_IMG_URL.'/no_img.png';
-        $thumb['alt'] = '이미지가 없습니다.';
+        $thumb['alt'] = _lang('이미지가 없습니다.');
     }
     $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
     ?>
@@ -35,9 +35,9 @@ $thumb_height = 150;
  
             echo "<a href=\"".$list[$i]['href']."\"> ";
             if ($list[$i]['is_notice'])
-                echo "<strong>".$list[$i]['subject']."</strong>";
+                echo "<strong>"._lang($list[$i]['subject'])."</strong>";
             else
-                echo $list[$i]['subject'];
+                echo _lang($list[$i]['subject']);
 
 
 
