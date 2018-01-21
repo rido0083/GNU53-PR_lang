@@ -14,22 +14,10 @@
 
 해당 플로그인에 필요한 Database는 자동생성된다.
 
-자동생성되지 않는경우 아래 해당 sql문을 실행 생성해 준다.
-
-[구누접두어_] 의 경우 그누보드 설치시 사용한 접두어를 입력해 준다. 
-
----------------------------------------------------------------
-
-      CREATE TABLE `그누접두어_srd_lang` (
-      `id` int(16) NOT NULL,
-      `include` varchar(255) NOT NULL,
-      `lang` char(10) NOT NULL,
-      `tokey` text NOT NULL,
-      `getval` text NOT NULL
-      ) ENGINE=MyISAM DEFAULT CHARSET=utf8;		
-	";
-
----------------------------------------------------------------
+자동 생성 되지 않는 경우에는 /extend/srd.extend.php 파일을 참고해서 DB를 생성해준다.
 
 
-라이센스는 그누보드의 LGPL를 그대로 따른다.
+
+
+
+라이센스는 그누보드의 LGPL를 그대로 따른다.   
