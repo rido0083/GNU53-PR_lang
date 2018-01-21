@@ -46,7 +46,7 @@ include_once('../admin.head.php');
     </thead>
     <tbody>
     <?php
-    $sql = "SELECT COUNT(*), id, include, tokey FROM {$g5['g5_srd_lang']} GROUP BY tokey order by id asc";
+    $sql = "SELECT COUNT(*), id, include, tokey FROM {$srd['srd_lang']} GROUP BY tokey order by id asc";
     $result = sql_query($sql);
     for ($i=0 ; $row = sql_fetch_array($result) ; $i++) {
     ?>
@@ -60,11 +60,11 @@ include_once('../admin.head.php');
             <td><textarea class="frm_input modi_lang"
             data-id="<?php echo $row['id']?>"
             data-lang="ko"
-            data-ori="<?php echo $row['tokey']?>"
+            data-ori="<?php echo $row['tokey']?>" readonly
                 ><?php echo $row['tokey']?></textarea></td>
     <?php
         //언어 기준별로 데이터를 반환한다.
-        $sql2 = "select * from {$g5['g5_srd_lang']} where tokey = '{$row['tokey']}'";
+        $sql2 = "select * from {$srd['srd_lang']} where tokey = '{$row['tokey']}'";
         $result2 = sql_query($sql2);
         
         //변수초기화
@@ -79,7 +79,9 @@ include_once('../admin.head.php');
         }  // end for
         foreach ($iu_lnagType as $val) {
         ?>
-            <td><textarea class="frm_input modi_lang"
+            <td>
+                <?php echo $get_id[$val] ?>
+                <textarea class="frm_input modi_lang"
                 data-id="<?php echo $get_id[$val]?>"
                 data-lang="<?php echo $val?>"
                 data-ori="<?php echo $row['tokey']?>"
