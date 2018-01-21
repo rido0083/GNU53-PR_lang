@@ -185,16 +185,16 @@ function lang_ch ($l) {
 
 //기본언어를 한국어로 선택
 if (!$_SESSION['lang']) {
-    $_SESSION['lang'] = 'ko_KR';
+    $_SESSION['lang'] = 'ko';
 }
 
 $srd_lang = $_SESSION['lang'];
 //echo $srd_lang;
 //언어분류 (기본 언어는 추가해서 사용가능) 한국어는 기본언어라 생략 아래는 언어셋 이름 예제
 /*
-    ko_KR
-    en_US
-    ja_JP
+    ko
+    en
+    ja
     zh_CN
  */
 //사용할 언어셋을 선택 배열로 추가가능 (기본은 한국어 / 영어 / 일본어)
