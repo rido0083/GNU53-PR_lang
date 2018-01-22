@@ -37,25 +37,25 @@ $return_uri = $_SERVER['REQUEST_URI'];
             <?php if ($is_member) {  ?>
 
             <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php"><i class="fa fa-cog" aria-hidden="true"></i>
-                    <?php echo _lang('정보수정')?></a></li>
+                    <?php echo _('정보수정')?></a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>
-                    <?php echo _lang('로그아웃')?></a></li>
+                    <?php echo _('로그아웃')?></a></li>
             <?php if ($is_admin) {  ?>
             <li  class="tnb_admin"><a href="<?php echo G5_ADMIN_URL ?>"><b><i class="fa fa-user-circle" aria-hidden="true"></i>
-                        <?php echo _lang('관리자')?></b></a></li>
+                        <?php echo _('관리자')?></b></a></li>
             <?php }  ?>
             <?php } else {  ?>
             <li><a href="<?php echo G5_BBS_URL ?>/register.php"><i class="fa fa-user-plus" aria-hidden="true"></i>
-                    <?php echo _lang('회원가입')?></a></li>
+                    <?php echo _('회원가입')?></a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/login.php"><b><i class="fa fa-sign-in" aria-hidden="true"></i>
-                        <?php echo _lang('로그인')?></b></a></li>
+                        <?php echo _('로그인')?></b></a></li>
             <?php }  ?>
 
             <?php if(G5_COMMUNITY_USE) { ?>
             <li class="tnb_left tnb_shop"><a href="<?php echo G5_SHOP_URL; ?>/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                    <?php echo _lang('쇼핑몰')?></a></li>
+                    <?php echo _('쇼핑몰')?></a></li>
             <li class="tnb_left tnb_community"><a href="<?php echo G5_URL; ?>/"><i class="fa fa-home" aria-hidden="true"></i>
-                    <?php echo _lang('커뮤니티')?></a></li>
+                    <?php echo _('커뮤니티')?></a></li>
             <?php } ?>
 
         </ul>
@@ -69,20 +69,20 @@ $return_uri = $_SERVER['REQUEST_URI'];
     
         <div class="hd_sch_wr">
             <fieldset id="hd_sch" >
-                <legend><?php echo _lang('사이트 내 전체검색')?></legend>
+                <legend><?php echo _('사이트 내 전체검색')?></legend>
                 <form name="fsearchbox" method="get" action="<?php echo G5_BBS_URL ?>/search.php" onsubmit="return fsearchbox_submit(this);">
                 <input type="hidden" name="sfl" value="wr_subject||wr_content">
                 <input type="hidden" name="sop" value="and">
-                <label for="sch_stx" class="sound_only"><?php echo _lang('검색어 필수')?></label>
-                <input type="text" name="stx" id="sch_stx" maxlength="20" placeholder="<?php echo _lang('검색어를 입력해주세요')?>">
-                <button type="submit" id="sch_submit" value="검색"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only"><?php echo _lang('검색')?></span></button>
+                <label for="sch_stx" class="sound_only"><?php echo _('검색어 필수')?></label>
+                <input type="text" name="stx" id="sch_stx" maxlength="20" placeholder="<?php echo _('검색어를 입력해주세요')?>">
+                <button type="submit" id="sch_submit" value="검색"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only"><?php echo _('검색')?></span></button>
                 </form>
 
                 <script>
                 function fsearchbox_submit(f)
                 {
                     if (f.stx.value.length < 2) {
-                        alert("<?php echo _lang('검색어는 두글자 이상 입력하십시오.')?>");
+                        alert("<?php echo _('검색어는 두글자 이상 입력하십시오.')?>");
                         f.stx.select();
                         f.stx.focus();
                         return false;
@@ -96,7 +96,7 @@ $return_uri = $_SERVER['REQUEST_URI'];
                     }
 
                     if (cnt > 1) {
-                        alert("<?php echo _lang('빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다.')?>");
+                        alert("<?php echo _('빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다.')?>");
                         f.stx.select();
                         f.stx.focus();
                         return false;
@@ -111,17 +111,17 @@ $return_uri = $_SERVER['REQUEST_URI'];
             <?php echo popular('theme/basic'); // 인기검색어, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?>
         </div>
         <style>
-            .srd_lang {
+            .srd_ {
                 position: relative;
             }
-            .srd_lang_div {
+            .srd__div {
                 position: absolute;
                 width: 100px;
                 left: -25px;
                 z-index: 1000;
                 display: none;
             }
-            .srd_lang_div div {
+            .srd__div div {
                 border: 1px solid #333;
                 background-color: blueviolet;
                 color: aliceblue;
@@ -130,17 +130,17 @@ $return_uri = $_SERVER['REQUEST_URI'];
             }
         </style>
         <ul id="hd_qnb">
-            <li><a href="<?php echo G5_BBS_URL ?>/faq.php"><i class="fa fa-question" aria-hidden="true"></i><span><?php echo _lang('FAQ')?></span></a></li>
-            <li><a href="<?php echo G5_BBS_URL ?>/qalist.php"><i class="fa fa-comments" aria-hidden="true"></i><span><?php echo _lang('1:1문의')?></span></a></li>
-            <li><a href="<?php echo G5_BBS_URL ?>/current_connect.php" class="visit"><i class="fa fa-users" aria-hidden="true"></i><span><?php echo _lang('접속자')?></span><strong class="visit-num"><?php echo connect('theme/basic'); // 현재 접속자수, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?></strong></a></li>
-            <li><a href="<?php echo G5_BBS_URL ?>/new.php"><i class="fa fa-history" aria-hidden="true"></i><span><?php echo _lang('새글')?></span></a></li>
-            <li><i class="fa fa-history srd_lang" aria-hidden="true"></i><span><?php echo _lang('언어')?></span>
+            <li><a href="<?php echo G5_BBS_URL ?>/faq.php"><i class="fa fa-question" aria-hidden="true"></i><span><?php echo _('FAQ')?></span></a></li>
+            <li><a href="<?php echo G5_BBS_URL ?>/qalist.php"><i class="fa fa-comments" aria-hidden="true"></i><span><?php echo _('1:1문의')?></span></a></li>
+            <li><a href="<?php echo G5_BBS_URL ?>/current_connect.php" class="visit"><i class="fa fa-users" aria-hidden="true"></i><span><?php echo _('접속자')?></span><strong class="visit-num"><?php echo connect('theme/basic'); // 현재 접속자수, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?></strong></a></li>
+            <li><a href="<?php echo G5_BBS_URL ?>/new.php"><i class="fa fa-history" aria-hidden="true"></i><span><?php echo _('새글')?></span></a></li>
+            <li><i class="fa fa-history srd_" aria-hidden="true"></i><span><?php echo _('언어')?></span>
                 <form name="change" id="change" method="post">
-                <div class="srd_lang_div">
+                <div class="srd__div">
                     <?php
                     foreach ($iu_lnagMenu as $key => $val) {
                     ?>
-                        <div onclick="change_lang('<?php echo $key?>' , '<?php echo $return_uri?>')"><?php echo _lang($val)?></div>
+                        <div><a href="?locale=<?php echo $key?>"><?php echo _($val)?></a></div>
                     <?php
                     }
                     ?>
@@ -151,25 +151,20 @@ $return_uri = $_SERVER['REQUEST_URI'];
     </div>
 
     <script>
-        $(".srd_lang").click(function () {
-            if($(".srd_lang_div").css("display") == "none"){
-                $(".srd_lang_div").show();
+        $(".srd_").click(function () {
+            if($(".srd__div").css("display") == "none"){
+                $(".srd__div").show();
             } else {
-                $(".srd_lang_div").hide();
+                $(".srd__div").hide();
             }
         });
-        function change_lang(lang, return_url) {
-            var f = document.change;
-            f.action = '<?php echo G5_URL?>/srd/change_lang.php?lang='+lang+'&return_url='+return_url;
-            f.submit();
-        }
     </script>
-    
+
     <nav id="gnb">
-        <h2><?php echo _lang('메인메뉴')?></h2>
+        <h2><?php echo _('메인메뉴')?></h2>
         <div class="gnb_wrap">
             <ul id="gnb_1dul">
-                <li class="gnb_1dli gnb_mnal"><button type="button" class="gnb_menu_btn"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only"><?php echo _lang('로그아웃')?>전체메뉴열기</span></button></li>
+                <li class="gnb_1dli gnb_mnal"><button type="button" class="gnb_menu_btn"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only"><?php echo _('로그아웃')?>전체메뉴열기</span></button></li>
                 <?php
                 $sql = " select *
                             from {$g5['menu_table']}
@@ -209,7 +204,7 @@ $return_uri = $_SERVER['REQUEST_URI'];
                         if( empty($row2) ) continue; 
 
                         if($k == 0)
-                            echo '<span class="bg"> _lang(\'하위분류\') </span><ul class="gnb_2dul">'.PHP_EOL;
+                            echo '<span class="bg"> _(\'하위분류\') </span><ul class="gnb_2dul">'.PHP_EOL;
                     ?>
                         <li class="gnb_2dli"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="gnb_2da"><?php echo $row2['me_name'] ?></a></li>
                     <?php
@@ -226,12 +221,12 @@ $return_uri = $_SERVER['REQUEST_URI'];
 
                 if ($i == 0) {  ?>
                     <li class="gnb_empty"><?php if ($is_admin) { ?> <a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">
-                            <?php echo _lang('관리자모드 &gt; 환경설정 &gt; 메뉴설정')?></a>
-                            <?php echo _lang('에서 설정하실 수 있습니다.')?><?php } ?></li>
+                            <?php echo _('관리자모드 &gt; 환경설정 &gt; 메뉴설정')?></a>
+                            <?php echo _('에서 설정하실 수 있습니다.')?><?php } ?></li>
                 <?php } ?>
             </ul>
             <div id="gnb_all">
-                <h2><?php echo _lang('전체메뉴')?></h2>
+                <h2><?php echo _('전체메뉴')?></h2>
                 <ul class="gnb_al_ul">
                     <?php
                     
@@ -260,7 +255,7 @@ $return_uri = $_SERVER['REQUEST_URI'];
                     }   //end foreach $row
 
                     if ($i == 0) {  ?>
-                        <li class="gnb_empty"><?php echo _lang('메뉴 준비 중입니다.')?><?php if ($is_admin) { ?> <br><a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
+                        <li class="gnb_empty"><?php echo _('메뉴 준비 중입니다.')?><?php if ($is_admin) { ?> <br><a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
                     <?php } ?>
                 </ul>
                 <button type="button" class="gnb_close_btn"><i class="fa fa-times" aria-hidden="true"></i></button>

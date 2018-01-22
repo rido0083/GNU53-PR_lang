@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-01-18 14:20+0900\n"
+"PO-Revision-Date: 2018-01-22 13:59+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja_JP\n"
+
+msgid "관리자"
+msgstr "管理者"
+
+msgid "회원가입"
+msgstr "会員"
+
+msgid "정보수정"
+msgstr "情報の変更"
+
+msgid "로그인"
+msgstr "ログイン"
+
+msgid "로그아웃"
+msgstr "ログアウト"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "1:1문의"
+msgstr "1:1 お問い合わせ"
+
+msgid "접속자"
+msgstr "接続者"
+
+msgid "새글"
+msgstr "新しい文"
+
+msgid "한국어"
+msgstr "韓国語"
+
+msgid "영어"
+msgstr "英語"
+
+msgid "일어"
+msgstr "日本語"

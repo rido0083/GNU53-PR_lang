@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-01-23 00:49+0900\n"
+"PO-Revision-Date: 2018-01-23 00:50+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ../../theme/basic_srd\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: head.php\n"
+
+#: head.php:40
+msgid "정보수정"
+msgstr "编辑信息"
+
+#: head.php:42 head.php:167
+msgid "로그아웃"
+msgstr "注销"
+
+#: head.php:45
+msgid "관리자"
+msgstr "管理员"
+
+#: head.php:49
+msgid "회원가입"
+msgstr "成为会员"
+
+#: head.php:51
+msgid "로그인"
+msgstr "登入"
+
+#: head.php:56
+msgid "쇼핑몰"
+msgstr "商場"
+
+#: head.php:58
+msgid "커뮤니티"
+msgstr "社区"
+
+#: head.php:72
+msgid "사이트 내 전체검색"
+msgstr "全网站搜索"
+
+#: head.php:76
+msgid "검색어 필수"
+msgstr "所需期限"
+
+#: head.php:77
+msgid "검색어를 입력해주세요"
+msgstr ""
+
+#: head.php:78
+msgid "검색"
+msgstr "搜寻"
+
+#: head.php:85
+msgid "검색어는 두글자 이상 입력하십시오."
+msgstr ""
+
+#: head.php:99
+msgid "빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다."
+msgstr ""
+
+#: head.php:133
+msgid "FAQ"
+msgstr ""
+
+#: head.php:134
+msgid "1:1문의"
+msgstr ""
+
+#: head.php:135
+msgid "접속자"
+msgstr ""
+
+#: head.php:136
+msgid "새글"
+msgstr ""
+
+#: head.php:137
+msgid "언어"
+msgstr ""
+
+#: head.php:164
+msgid "메인메뉴"
+msgstr ""
+
+#: head.php:224
+msgid "관리자모드 &gt; 환경설정 &gt; 메뉴설정"
+msgstr ""
+
+#: head.php:225
+msgid "에서 설정하실 수 있습니다."
+msgstr ""
+
+#: head.php:229
+msgid "전체메뉴"
+msgstr ""
+
+#: head.php:258
+msgid "메뉴 준비 중입니다."
+msgstr ""
