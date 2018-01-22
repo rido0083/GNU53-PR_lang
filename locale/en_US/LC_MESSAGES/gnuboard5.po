@@ -1,50 +1,116 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-01-18 14:20+0900\n"
-"PO-Revision-Date: 2018-01-22 12:20+0900\n"
+"POT-Creation-Date: 2018-01-23 01:00+0900\n"
+"PO-Revision-Date: 2018-01-23 01:05+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ../../../theme/basic_srd\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: head.php\n"
 
-msgid "관리자"
-msgstr "Administrator"
-
-msgid "회원가입"
-msgstr "Join"
-
+#: head.php:40
 msgid "정보수정"
 msgstr "Modify"
 
-msgid "로그인"
-msgstr "Login"
-
+#: head.php:42 head.php:167
 msgid "로그아웃"
 msgstr "Logout"
 
+#: head.php:45
+msgid "관리자"
+msgstr "Administrator"
+
+#: head.php:49
+msgid "회원가입"
+msgstr "Join"
+
+#: head.php:51
+msgid "로그인"
+msgstr "Login"
+
+#: head.php:56
+msgid "쇼핑몰"
+msgstr "Shopping mall"
+
+#: head.php:58
+msgid "커뮤니티"
+msgstr "Community"
+
+#: head.php:72
+msgid "사이트 내 전체검색"
+msgstr "Site search"
+
+#: head.php:76
+msgid "검색어 필수"
+msgstr "Keyword"
+
+#: head.php:77
+msgid "검색어를 입력해주세요"
+msgstr "Type to search"
+
+#: head.php:78
+msgid "검색"
+msgstr "Search For"
+
+#: head.php:85
+msgid "검색어는 두글자 이상 입력하십시오."
+msgstr "Please enter 1 or more characters"
+
+#: head.php:99
+msgid "빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다."
+msgstr "A quick search, you can enter only one search term to the spaces."
+
+#: head.php:133
 msgid "FAQ"
 msgstr "FAQs"
 
+#: head.php:134
 msgid "1:1문의"
 msgstr "1:1 contact us"
 
+#: head.php:135
 msgid "접속자"
 msgstr "Connector"
 
+#: head.php:136
 msgid "새글"
 msgstr "New Posts"
 
-msgid "한국어"
-msgstr "Korean"
-
-msgid "영어"
+#: head.php:137
+#, fuzzy
+#| msgid "영어"
+msgid "언어"
 msgstr "English"
 
-msgid "일어"
-msgstr "Japanese"
+#: head.php:164
+msgid "메인메뉴"
+msgstr "Primary Menu (header)"
+
+#: head.php:224
+msgid "관리자모드 &gt; 환경설정 &gt; 메뉴설정"
+msgstr "Admin mode > preferences > menu settings"
+
+#: head.php:225
+msgid "에서 설정하실 수 있습니다."
+msgstr "connected to this output."
+
+#: head.php:229
+msgid "전체메뉴"
+msgstr "Full menu"
+
+#: head.php:258
+msgid "메뉴 준비 중입니다."
+msgstr "We are preparing the menu."
+
+#~ msgid "한국어"
+#~ msgstr "Korean"
+
+#~ msgid "일어"
+#~ msgstr "Japanese"

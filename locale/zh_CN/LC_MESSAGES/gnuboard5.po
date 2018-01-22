@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-23 00:49+0900\n"
-"PO-Revision-Date: 2018-01-23 00:50+0900\n"
+"PO-Revision-Date: 2018-01-23 01:08+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh\n"
@@ -52,7 +52,7 @@ msgstr "所需期限"
 
 #: head.php:77
 msgid "검색어를 입력해주세요"
-msgstr ""
+msgstr "请输入公会名称"
 
 #: head.php:78
 msgid "검색"
@@ -60,23 +60,23 @@ msgstr "搜寻"
 
 #: head.php:85
 msgid "검색어는 두글자 이상 입력하십시오."
-msgstr ""
+msgstr "请在下面输入您的密码 。"
 
 #: head.php:99
 msgid "빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다."
-msgstr ""
+msgstr "对文件进行索引可以加快搜索速度， 这会花费一些时间 。"
 
 #: head.php:133
 msgid "FAQ"
-msgstr ""
+msgstr "Q&A"
 
 #: head.php:134
 msgid "1:1문의"
-msgstr ""
+msgstr "1:1询问"
 
 #: head.php:135
 msgid "접속자"
-msgstr ""
+msgstr "ccu"
 
 #: head.php:136
 msgid "새글"
@@ -84,23 +84,23 @@ msgstr ""
 
 #: head.php:137
 msgid "언어"
-msgstr ""
+msgstr "语言"
 
 #: head.php:164
 msgid "메인메뉴"
-msgstr ""
+msgstr "主选项"
 
 #: head.php:224
 msgid "관리자모드 &gt; 환경설정 &gt; 메뉴설정"
-msgstr ""
+msgstr "管理模式 > 首选项 > 菜单设置"
 
 #: head.php:225
 msgid "에서 설정하실 수 있습니다."
-msgstr ""
+msgstr "我可能會。 。"
 
 #: head.php:229
 msgid "전체메뉴"
-msgstr ""
+msgstr "完整的菜单"
 
 #: head.php:258
 msgid "메뉴 준비 중입니다."
