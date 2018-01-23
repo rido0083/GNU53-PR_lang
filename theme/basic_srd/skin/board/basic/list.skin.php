@@ -67,7 +67,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             </th>
             <?php } ?>
             <th scope="col"><?php echo _('번호')?></th>
-            <th scope="col"><?php echo _('제목</')?>th>
+            <th scope="col"><?php echo _('제목')?></th>
             <th scope="col"><?php echo _('글쓴이')?></th>
             <th scope="col"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?><?php echo _('조회')?> <i class="fa fa-sort" aria-hidden="true"></i></a></th>
             <?php if ($is_good) { ?><th scope="col"><?php echo subject_sort_link('wr_good', $qstr2, 1) ?><?php echo _('추천')?> <i class="fa fa-sort" aria-hidden="true"></i></a></th><?php } ?>
@@ -82,7 +82,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <tr class="<?php if ($list[$i]['is_notice']) echo "bo_notice"; ?>">
             <?php if ($is_checkbox) { ?>
             <td class="td_chk">
-                <label for="chk_wr_id_<?php echo $i ?>" class="sound_only"><?php echo _($list[$i]['subject']) ?></label>
+                <label for="chk_wr_id_<?php echo $i ?>" class="sound_only"><?php echo $list[$i]['subject'] ?></label>
                 <input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>">
             </td>
             <?php } ?>
@@ -110,7 +110,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                         <?php
                             if (isset($list[$i]['icon_secret'])) echo rtrim($list[$i]['icon_secret']);
                          ?>
-                        <?php echo _($list[$i]['subject']) ?>
+                        <?php echo $list[$i]['subject'] ?>
                        
                     </a>
                     <?php

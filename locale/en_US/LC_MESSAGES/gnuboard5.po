@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-01-23 01:00+0900\n"
-"PO-Revision-Date: 2018-01-24 03:18+0900\n"
+"POT-Creation-Date: 2018-01-24 03:31+0900\n"
+"PO-Revision-Date: 2018-01-24 03:35+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -15,6 +15,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: head.php\n"
 "X-Poedit-SearchPath-2: tail.php\n"
+"X-Poedit-SearchPath-3: skin/board/basic/list.skin.php\n"
+"X-Poedit-SearchPath-4: skin/board/basic/style.css\n"
+"X-Poedit-SearchPath-5: skin/board/basic/view.skin.php\n"
+"X-Poedit-SearchPath-6: skin/board/basic/view_comment.skin.php\n"
+"X-Poedit-SearchPath-7: skin/board/basic/write.skin.php\n"
 
 #: head.php:40
 msgid "정보수정"
@@ -24,7 +29,7 @@ msgstr "Modify"
 msgid "로그아웃"
 msgstr "Logout"
 
-#: head.php:45
+#: head.php:45 skin/board/basic/list.skin.php:29
 msgid "관리자"
 msgstr "Administrator"
 
@@ -52,11 +57,11 @@ msgstr "Site search"
 msgid "검색어 필수"
 msgstr "Keyword"
 
-#: head.php:77
+#: head.php:77 skin/board/basic/list.skin.php:177
 msgid "검색어를 입력해주세요"
 msgstr "Type to search"
 
-#: head.php:78
+#: head.php:78 skin/board/basic/list.skin.php:178
 msgid "검색"
 msgstr "Search For"
 
@@ -109,6 +114,454 @@ msgstr "Full menu"
 #: head.php:258
 msgid "메뉴 준비 중입니다."
 msgstr "We are preparing the menu."
+
+#: skin/board/basic/list.skin.php:22 skin/board/basic/view_comment.skin.php:13
+#: skin/board/basic/view_comment.skin.php:34
+#: skin/board/basic/view_comment.skin.php:37
+#: skin/board/basic/view_comment.skin.php:105
+#: skin/board/basic/view_comment.skin.php:121
+#: skin/board/basic/view_comment.skin.php:123
+#: skin/board/basic/view_comment.skin.php:124
+#: skin/board/basic/view_comment.skin.php:201
+#: skin/board/basic/view_comment.skin.php:205
+#: skin/board/basic/write.skin.php:106 skin/board/basic/write.skin.php:118
+#: skin/board/basic/write.skin.php:144
+msgid "건"
+msgstr "Xxxxx"
+
+#: skin/board/basic/list.skin.php:23
+msgid "페이지"
+msgstr "Page"
+
+#: skin/board/basic/list.skin.php:30 skin/board/basic/list.skin.php:150
+#: skin/board/basic/view.skin.php:183
+msgid "글쓰기"
+msgstr "Write"
+
+#: skin/board/basic/list.skin.php:39
+msgid "카테고리"
+msgstr "Category"
+
+#: skin/board/basic/list.skin.php:60 skin/board/basic/list.skin.php:149
+#: skin/board/basic/view.skin.php:181
+msgid "목록"
+msgstr "Archive"
+
+#: skin/board/basic/list.skin.php:65
+msgid "현재 페이지 게시물 전체"
+msgstr "Total posts on the current page."
+
+#: skin/board/basic/list.skin.php:69
+msgid "번호"
+msgstr "Number"
+
+#: skin/board/basic/list.skin.php:70 skin/board/basic/list.skin.php:168
+#: skin/board/basic/write.skin.php:99 skin/board/basic/write.skin.php:102
+msgid "제목"
+msgstr "Title"
+
+#: skin/board/basic/list.skin.php:71 skin/board/basic/list.skin.php:173
+msgid "글쓴이"
+msgstr "By (Ko)"
+
+#: skin/board/basic/list.skin.php:72 skin/board/basic/view.skin.php:30
+msgid "조회"
+msgstr "Inquiry"
+
+#: skin/board/basic/list.skin.php:73 skin/board/basic/view.skin.php:82
+msgid "추천"
+msgstr "Like"
+
+#: skin/board/basic/list.skin.php:74 skin/board/basic/view.skin.php:83
+msgid "비추천"
+msgstr "Unlike"
+
+#: skin/board/basic/list.skin.php:92 skin/board/basic/write.skin.php:30
+msgid "공지"
+msgstr "Notice"
+
+#: skin/board/basic/list.skin.php:124 skin/board/basic/view.skin.php:29
+#: skin/board/basic/view_comment.skin.php:31
+msgid "댓글"
+msgstr "Comments."
+
+#: skin/board/basic/list.skin.php:136
+msgid "게시물이 없습니다."
+msgstr "No Posts found"
+
+#: skin/board/basic/list.skin.php:146
+msgid "선택삭제"
+msgstr "Check Delete"
+
+#: skin/board/basic/list.skin.php:146
+msgid "선택복사"
+msgstr "Select copy"
+
+#: skin/board/basic/list.skin.php:147
+msgid "선택이동"
+msgstr "Select Move"
+
+#: skin/board/basic/list.skin.php:160
+msgid "게시물 검색"
+msgstr "Search Posts"
+
+#: skin/board/basic/list.skin.php:166
+msgid "검색대상"
+msgstr "Search target"
+
+#: skin/board/basic/list.skin.php:169
+#: skin/board/basic/view_comment.skin.php:103
+msgid "내용"
+msgstr "Description"
+
+#: skin/board/basic/list.skin.php:170
+msgid "제목+내용"
+msgstr "Subject+Contents"
+
+#: skin/board/basic/list.skin.php:171
+msgid "회원아이디"
+msgstr "Member ID"
+
+#: skin/board/basic/list.skin.php:172
+msgid "회원아이디(코)"
+msgstr "Member ID (nose)"
+
+#: skin/board/basic/list.skin.php:174
+msgid "글쓴이(코)"
+msgstr "By (Ko)"
+
+#: skin/board/basic/list.skin.php:176
+#, fuzzy
+#| msgid "검색"
+msgid "검색어"
+msgstr "Search For"
+
+#: skin/board/basic/list.skin.php:176
+#: skin/board/basic/view_comment.skin.php:121
+#: skin/board/basic/view_comment.skin.php:123
+#: skin/board/basic/write.skin.php:59 skin/board/basic/write.skin.php:69
+#: skin/board/basic/write.skin.php:74 skin/board/basic/write.skin.php:99
+msgid "필수"
+msgstr "Net"
+
+#: skin/board/basic/list.skin.php:216
+msgid "할 게시물을 하나 이상 선택하세요."
+msgstr "- Please select one or more of the post."
+
+#: skin/board/basic/list.skin.php:231
+msgid ""
+"선택한 게시물을 정말 삭제하시겠습니까?\\n\\n한번 삭제한 자료는 복구할 수 없습"
+"니다\\n\\n답변글이 있는 게시글을 선택하신 경우\\n답변글도 선택하셔야 게시글"
+"이 삭제됩니다."
+msgstr ""
+"Are you sure you want to delete the selected post really? \\n\\n once "
+"deleted data cannot be recovered to writing a post to answer \\ n\\n "
+"selected if you will need to post or answer n also selected will be deleted."
+
+#: skin/board/basic/view.skin.php:27
+msgid "페이지 정보"
+msgstr "Page Information"
+
+#: skin/board/basic/view.skin.php:28
+#, fuzzy
+#| msgid "접속자"
+msgid "작성자"
+msgstr "Connector"
+
+#: skin/board/basic/view.skin.php:31
+msgid "작성일"
+msgstr "Created"
+
+#: skin/board/basic/view.skin.php:35
+msgid "본문"
+msgstr "Text"
+
+#: skin/board/basic/view.skin.php:113
+msgid "첨부파일"
+msgstr "Attachment"
+
+#: skin/board/basic/view.skin.php:126
+msgid "회 다운로드"
+msgstr "Downloads"
+
+#: skin/board/basic/view.skin.php:140
+msgid "관련링크"
+msgstr ""
+
+#: skin/board/basic/view.skin.php:155
+msgid "회 연결"
+msgstr "Downloads"
+
+#: skin/board/basic/view.skin.php:173 skin/board/basic/view_comment.skin.php:66
+#, fuzzy
+#| msgid "정보수정"
+msgid "수정"
+msgstr "Modify"
+
+#: skin/board/basic/view.skin.php:174 skin/board/basic/view_comment.skin.php:67
+msgid "삭제"
+msgstr ""
+
+#: skin/board/basic/view.skin.php:175
+msgid "복사"
+msgstr ""
+
+#: skin/board/basic/view.skin.php:176
+msgid "이동"
+msgstr ""
+
+#: skin/board/basic/view.skin.php:182 skin/board/basic/view_comment.skin.php:65
+msgid "답변"
+msgstr ""
+
+#: skin/board/basic/view.skin.php:188
+msgid "이전글"
+msgstr ""
+
+#: skin/board/basic/view.skin.php:188
+msgid "이전글제목입니다."
+msgstr ""
+
+#: skin/board/basic/view.skin.php:189
+msgid "다음글"
+msgstr ""
+
+#: skin/board/basic/view.skin.php:189
+msgid "다음글제목입니다."
+msgstr ""
+
+#: skin/board/basic/view.skin.php:213
+msgid "다운로드 권한이 없습니다.\\n회원이시라면 로그인 후 이용해 보십시오."
+msgstr ""
+
+#: skin/board/basic/view.skin.php:217
+msgid "파일을 다운로드 하시면 포인트가 차감("
+msgstr ""
+
+#: skin/board/basic/view.skin.php:217
+msgid ""
+"점)됩니다.\\n\\n포인트는 게시물당 한번만 차감되며 다음에 다시 다운로드 하셔"
+"도 중복하여 차감하지 않습니다.\\n\\n그래도 다운로드 하시겠습니까?"
+msgstr ""
+
+#: skin/board/basic/view.skin.php:287
+msgid "이 글을 비추천하셨습니다."
+msgstr ""
+
+#: skin/board/basic/view.skin.php:290
+msgid "이 글을 추천하셨습니다."
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:10
+msgid "댓글목록"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:31
+msgid "댓글의"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:47 skin/board/basic/write.skin.php:43
+msgid "비밀글"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:79
+msgid "등록된 댓글이 없습니다."
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:90
+msgid "댓글쓰기"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:104
+#: skin/board/basic/write.skin.php:127
+#, fuzzy
+#| msgid "관리자"
+msgid "글자"
+msgstr "Administrator"
+
+#: skin/board/basic/view_comment.skin.php:122
+#: skin/board/basic/write.skin.php:69 skin/board/basic/write.skin.php:70
+msgid "이름"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:131
+msgid "동시등록"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:140
+msgid "비밀글사용"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:141
+msgid "댓글등록"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:187
+#: skin/board/basic/write.skin.php:229
+msgid "내용에 금지단어"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:187
+#: skin/board/basic/write.skin.php:223 skin/board/basic/write.skin.php:229
+msgid "가 포함되어있습니다"
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:201
+#: skin/board/basic/write.skin.php:241
+msgid "글자 이상 쓰셔야 합니다."
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:205
+#: skin/board/basic/write.skin.php:245
+msgid "글자 이하로 쓰셔야 합니다."
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:211
+#, fuzzy
+#| msgid "검색어는 두글자 이상 입력하십시오."
+msgid "댓글을 입력하여 주십시오."
+msgstr "Please enter 1 or more characters"
+
+#: skin/board/basic/view_comment.skin.php:220
+msgid "이름이 입력되지 않았습니다."
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:231
+msgid "비밀번호가 입력되지 않았습니다."
+msgstr ""
+
+#: skin/board/basic/view_comment.skin.php:294
+msgid "이 댓글을 삭제하시겠습니까?"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:50
+msgid "답변메일받기"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:59
+msgid "분류"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:61
+msgid "분류를 선택하세요"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:74 skin/board/basic/write.skin.php:75
+msgid "비밀번호"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:79 skin/board/basic/write.skin.php:80
+msgid "이메일"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:86 skin/board/basic/write.skin.php:87
+msgid "홈페이지"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:93
+msgid "옵션"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:108
+msgid "임시 저장된 글 목록"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:110
+msgid "닫기"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:122
+msgid "이 게시판은 최소"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:122
+msgid "글자 이상"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:122
+msgid "최대"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:122
+#, fuzzy
+#| msgid "에서 설정하실 수 있습니다."
+msgid "글자 이하까지 글을 쓰실 수 있습니다."
+msgstr "connected to this output."
+
+#: skin/board/basic/write.skin.php:135
+msgid "링크  #"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:143
+msgid "파일 #"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:144
+msgid "용량"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:144
+msgid "이하만 업로드 가능"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:147
+#, fuzzy
+#| msgid "검색어를 입력해주세요"
+msgid "파일 설명을 입력해주세요."
+msgstr "Type to search"
+
+#: skin/board/basic/write.skin.php:152
+msgid "파일 삭제"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:168
+msgid "취소"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:169
+msgid "작성완료"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:190
+msgid ""
+"자동 줄바꿈을 하시겠습니까? 자동 줄바꿈은 게시물 내용중 줄바뀐 곳을<br>태그"
+"로 변환하는 기능입니다."
+msgstr ""
+
+#: skin/board/basic/write.skin.php:223
+msgid "제목에 금지단어"
+msgstr ""
+
+#: skin/board/basic/write.skin.php:241 skin/board/basic/write.skin.php:245
+msgid "내용은"
+msgstr ""
+
+#: tail.php:40
+msgid "회사소개"
+msgstr ""
+
+#: tail.php:41
+msgid "개인정보처리방침"
+msgstr ""
+
+#: tail.php:42
+msgid "서비스이용약관"
+msgstr ""
+
+#: tail.php:43
+msgid "모바일버전"
+msgstr ""
+
+#: tail.php:46
+msgid "소유하신 도메인."
+msgstr ""
+
+#: tail.php:49
+msgid "상단으로"
+msgstr ""
+
+#~ msgid "제목</"
+#~ msgstr "Title </"
 
 #~ msgid "한국어"
 #~ msgstr "Korean"
