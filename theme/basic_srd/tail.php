@@ -37,10 +37,10 @@ if(G5_COMMUNITY_USE === false) {
 
     <div id="ft_wr">
         <div id="ft_link">
-            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=company"><?php echo _lang('회사소개')?></a>
-            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=privacy"><?php echo _lang('개인정보처리방침')?></a>
-            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=provision"><?php echo _lang('서비스이용약관')?></a>
-            <a href="<?php echo get_device_change_url(); ?>"><?php echo _lang('모바일버전')?></a>
+            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=company"><?php echo _('회사소개')?></a>
+            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=privacy"><?php echo _('개인정보처리방침')?></a>
+            <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=provision"><?php echo _('서비스이용약관')?></a>
+            <a href="<?php echo get_device_change_url(); ?>"><?php echo _('모바일버전')?></a>
         </div>
         <div id="ft_catch"><img src="<?php echo G5_IMG_URL; ?>/ft_logo.png" alt="<?php echo G5_VERSION ?>"></div>
         <div id="ft_copy">Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.</div>
