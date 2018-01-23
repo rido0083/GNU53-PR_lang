@@ -43,10 +43,10 @@ if(G5_COMMUNITY_USE === false) {
             <a href="<?php echo get_device_change_url(); ?>"><?php echo _('모바일버전')?></a>
         </div>
         <div id="ft_catch"><img src="<?php echo G5_IMG_URL; ?>/ft_logo.png" alt="<?php echo G5_VERSION ?>"></div>
-        <div id="ft_copy">Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.</div>
+        <div id="ft_copy">Copyright &copy; <b><?php echo _('소유하신 도메인.')?></b> All rights reserved.</div>
     </div>
 
-    <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+    <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only"><?php echo _('상단으로')?></span></button>
         <script>
         
         $(function() {
