@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-24 03:31+0900\n"
-"PO-Revision-Date: 2018-01-24 03:35+0900\n"
+"PO-Revision-Date: 2018-01-24 13:06+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Basepath: ../../../theme/basic_srd\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -300,35 +300,35 @@ msgstr "Modify"
 
 #: skin/board/basic/view.skin.php:174 skin/board/basic/view_comment.skin.php:67
 msgid "삭제"
-msgstr ""
+msgstr "Deletion"
 
 #: skin/board/basic/view.skin.php:175
 msgid "복사"
-msgstr ""
+msgstr "Copy"
 
 #: skin/board/basic/view.skin.php:176
 msgid "이동"
-msgstr ""
+msgstr "Move"
 
 #: skin/board/basic/view.skin.php:182 skin/board/basic/view_comment.skin.php:65
 msgid "답변"
-msgstr ""
+msgstr "Reply"
 
 #: skin/board/basic/view.skin.php:188
 msgid "이전글"
-msgstr ""
+msgstr "Previous article"
 
 #: skin/board/basic/view.skin.php:188
 msgid "이전글제목입니다."
-msgstr ""
+msgstr "Previous article title."
 
 #: skin/board/basic/view.skin.php:189
 msgid "다음글"
-msgstr ""
+msgstr "Next article"
 
 #: skin/board/basic/view.skin.php:189
 msgid "다음글제목입니다."
-msgstr ""
+msgstr "The following article is the title."
 
 #: skin/board/basic/view.skin.php:213
 msgid "다운로드 권한이 없습니다.\\n회원이시라면 로그인 후 이용해 보십시오."
@@ -354,7 +354,7 @@ msgstr ""
 
 #: skin/board/basic/view_comment.skin.php:10
 msgid "댓글목록"
-msgstr ""
+msgstr "Comment list"
 
 #: skin/board/basic/view_comment.skin.php:31
 msgid "댓글의"
@@ -366,7 +366,7 @@ msgstr ""
 
 #: skin/board/basic/view_comment.skin.php:79
 msgid "등록된 댓글이 없습니다."
-msgstr ""
+msgstr "No Posts found"
 
 #: skin/board/basic/view_comment.skin.php:90
 msgid "댓글쓰기"
@@ -374,15 +374,13 @@ msgstr ""
 
 #: skin/board/basic/view_comment.skin.php:104
 #: skin/board/basic/write.skin.php:127
-#, fuzzy
-#| msgid "관리자"
 msgid "글자"
-msgstr "Administrator"
+msgstr "more"
 
 #: skin/board/basic/view_comment.skin.php:122
 #: skin/board/basic/write.skin.php:69 skin/board/basic/write.skin.php:70
 msgid "이름"
-msgstr ""
+msgstr "Name"
 
 #: skin/board/basic/view_comment.skin.php:131
 msgid "동시등록"
@@ -468,19 +466,19 @@ msgstr ""
 
 #: skin/board/basic/write.skin.php:110
 msgid "닫기"
-msgstr ""
+msgstr "Closed"
 
 #: skin/board/basic/write.skin.php:122
 msgid "이 게시판은 최소"
-msgstr ""
+msgstr "This bulletin is a minimum"
 
 #: skin/board/basic/write.skin.php:122
 msgid "글자 이상"
-msgstr ""
+msgstr "more"
 
 #: skin/board/basic/write.skin.php:122
 msgid "최대"
-msgstr ""
+msgstr "Max"
 
 #: skin/board/basic/write.skin.php:122
 #, fuzzy
@@ -490,7 +488,7 @@ msgstr "connected to this output."
 
 #: skin/board/basic/write.skin.php:135
 msgid "링크  #"
-msgstr ""
+msgstr "Link"
 
 #: skin/board/basic/write.skin.php:143
 msgid "파일 #"
@@ -512,7 +510,7 @@ msgstr "Type to search"
 
 #: skin/board/basic/write.skin.php:152
 msgid "파일 삭제"
-msgstr ""
+msgstr "Deletion"
 
 #: skin/board/basic/write.skin.php:168
 msgid "취소"
