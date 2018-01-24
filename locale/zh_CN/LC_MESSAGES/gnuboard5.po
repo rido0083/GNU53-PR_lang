@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-24 17:13+0900\n"
-"PO-Revision-Date: 2018-01-24 17:14+0900\n"
+"PO-Revision-Date: 2018-01-24 17:34+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.5\n"
 "X-Poedit-Basepath: ../../../theme/basic_srd\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: head.php\n"
@@ -86,7 +86,7 @@ msgstr "ccu"
 
 #: head.php:136
 msgid "새글"
-msgstr ""
+msgstr "Saegeul"
 
 #: head.php:137
 msgid "언어"
@@ -110,7 +110,7 @@ msgstr "完整的菜单"
 
 #: head.php:258
 msgid "메뉴 준비 중입니다."
-msgstr ""
+msgstr "菜单的准备。"
 
 #: skin/board/basic/list.skin.php:22 skin/board/basic/view_comment.skin.php:13
 #: skin/board/basic/view_comment.skin.php:34
@@ -124,83 +124,83 @@ msgstr ""
 #: skin/board/basic/write.skin.php:106 skin/board/basic/write.skin.php:118
 #: skin/board/basic/write.skin.php:144
 msgid "건"
-msgstr ""
+msgstr "案件"
 
 #: skin/board/basic/list.skin.php:23
 msgid "페이지"
-msgstr ""
+msgstr "上一页"
 
 #: skin/board/basic/list.skin.php:30 skin/board/basic/list.skin.php:150
 #: skin/board/basic/view.skin.php:183
 msgid "글쓰기"
-msgstr ""
+msgstr "发表"
 
 #: skin/board/basic/list.skin.php:39
 msgid "카테고리"
-msgstr ""
+msgstr "分类"
 
 #: skin/board/basic/list.skin.php:60 skin/board/basic/list.skin.php:149
 #: skin/board/basic/view.skin.php:181
 msgid "목록"
-msgstr ""
+msgstr "inset"
 
 #: skin/board/basic/list.skin.php:65
 msgid "현재 페이지 게시물 전체"
-msgstr ""
+msgstr "总电流页帖子"
 
 #: skin/board/basic/list.skin.php:69
 msgid "번호"
-msgstr ""
+msgstr "号码"
 
 #: skin/board/basic/list.skin.php:70 skin/board/basic/list.skin.php:168
 #: skin/board/basic/write.skin.php:99 skin/board/basic/write.skin.php:102
 msgid "제목"
-msgstr ""
+msgstr "题目"
 
 #: skin/board/basic/list.skin.php:71 skin/board/basic/list.skin.php:173
 msgid "글쓴이"
-msgstr ""
+msgstr "作者"
 
 #: skin/board/basic/list.skin.php:72 skin/board/basic/view.skin.php:30
 msgid "조회"
-msgstr ""
+msgstr "查询"
 
 #: skin/board/basic/list.skin.php:73 skin/board/basic/view.skin.php:82
 msgid "추천"
-msgstr ""
+msgstr "推荐"
 
 #: skin/board/basic/list.skin.php:74 skin/board/basic/view.skin.php:83
 msgid "비추천"
-msgstr ""
+msgstr "反感"
 
 #: skin/board/basic/list.skin.php:92 skin/board/basic/write.skin.php:30
 msgid "공지"
-msgstr ""
+msgstr "公告"
 
 #: skin/board/basic/list.skin.php:124 skin/board/basic/view.skin.php:29
 #: skin/board/basic/view_comment.skin.php:31
 msgid "댓글"
-msgstr ""
+msgstr "留言"
 
 #: skin/board/basic/list.skin.php:136
 msgid "게시물이 없습니다."
-msgstr ""
+msgstr "没有帖子。"
 
 #: skin/board/basic/list.skin.php:146
 msgid "선택삭제"
-msgstr ""
+msgstr "选择删除"
 
 #: skin/board/basic/list.skin.php:146
 msgid "선택복사"
-msgstr ""
+msgstr "选择复制"
 
 #: skin/board/basic/list.skin.php:147
 msgid "선택이동"
-msgstr ""
+msgstr "选择转到"
 
 #: skin/board/basic/list.skin.php:160
 msgid "게시물 검색"
-msgstr ""
+msgstr "搜寻"
 
 #: skin/board/basic/list.skin.php:166
 msgid "검색대상"
@@ -239,7 +239,7 @@ msgstr "搜寻"
 #: skin/board/basic/write.skin.php:59 skin/board/basic/write.skin.php:69
 #: skin/board/basic/write.skin.php:74 skin/board/basic/write.skin.php:99
 msgid "필수"
-msgstr ""
+msgstr "所需期限"
 
 #: skin/board/basic/list.skin.php:216
 msgid "할 게시물을 하나 이상 선택하세요."
@@ -247,9 +247,9 @@ msgstr ""
 
 #: skin/board/basic/list.skin.php:231
 msgid ""
-"선택한 게시물을 정말 삭제하시겠습니까?\\n\\n한번 삭제한 자료는 복구할 수 없습"
-"니다\\n\\n답변글이 있는 게시글을 선택하신 경우\\n답변글도 선택하셔야 게시글"
-"이 삭제됩니다."
+"선택한 게시물을 정말 삭제하시겠습니까?\\n\\n한번 삭제한 자료는 복구할 수 없"
+"습니다\\n\\n답변글이 있는 게시글을 선택하신 경우\\n답변글도 선택하셔야 게시"
+"글이 삭제됩니다."
 msgstr ""
 
 #: skin/board/basic/view.skin.php:27
@@ -286,13 +286,13 @@ msgstr ""
 msgid "회 연결"
 msgstr ""
 
-#: skin/board/basic/view.skin.php:173 skin/board/basic/view_comment.skin.php:66
-#, fuzzy
-#| msgid "정보수정"
+#: skin/board/basic/view.skin.php:173
+#: skin/board/basic/view_comment.skin.php:66
 msgid "수정"
 msgstr "编辑信息"
 
-#: skin/board/basic/view.skin.php:174 skin/board/basic/view_comment.skin.php:67
+#: skin/board/basic/view.skin.php:174
+#: skin/board/basic/view_comment.skin.php:67
 msgid "삭제"
 msgstr ""
 
@@ -304,7 +304,8 @@ msgstr ""
 msgid "이동"
 msgstr ""
 
-#: skin/board/basic/view.skin.php:182 skin/board/basic/view_comment.skin.php:65
+#: skin/board/basic/view.skin.php:182
+#: skin/board/basic/view_comment.skin.php:65
 msgid "답변"
 msgstr ""
 
@@ -354,7 +355,8 @@ msgstr ""
 msgid "댓글의"
 msgstr ""
 
-#: skin/board/basic/view_comment.skin.php:47 skin/board/basic/write.skin.php:43
+#: skin/board/basic/view_comment.skin.php:47
+#: skin/board/basic/write.skin.php:43
 msgid "비밀글"
 msgstr ""
 
@@ -368,8 +370,6 @@ msgstr ""
 
 #: skin/board/basic/view_comment.skin.php:104
 #: skin/board/basic/write.skin.php:127
-#, fuzzy
-#| msgid "관리자"
 msgid "글자"
 msgstr "管理员"
 
