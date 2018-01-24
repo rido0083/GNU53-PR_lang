@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-24 13:21+0900\n"
-"PO-Revision-Date: 2018-01-24 17:07+0900\n"
+"PO-Revision-Date: 2018-01-24 21:13+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ../../../theme/basic_srd\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: head.php\n"
@@ -90,10 +90,8 @@ msgid "새글"
 msgstr "新しい文"
 
 #: head.php:137
-#, fuzzy
-#| msgid "영어"
 msgid "언어"
-msgstr "英語"
+msgstr "言語"
 
 #: head.php:164
 msgid "메인메뉴"
@@ -127,50 +125,50 @@ msgstr "メニュー準備中です。"
 #: skin/board/basic/write.skin.php:106 skin/board/basic/write.skin.php:118
 #: skin/board/basic/write.skin.php:144
 msgid "건"
-msgstr ""
+msgstr "乾"
 
 #: skin/board/basic/list.skin.php:23
 msgid "페이지"
-msgstr ""
+msgstr "ページ"
 
 #: skin/board/basic/list.skin.php:30 skin/board/basic/list.skin.php:150
 #: skin/board/basic/view.skin.php:183
 msgid "글쓰기"
-msgstr ""
+msgstr "作文"
 
 #: skin/board/basic/list.skin.php:39
 msgid "카테고리"
-msgstr ""
+msgstr "カテゴリ"
 
 #: skin/board/basic/list.skin.php:60 skin/board/basic/list.skin.php:149
 #: skin/board/basic/view.skin.php:181
 msgid "목록"
-msgstr ""
+msgstr "list"
 
 #: skin/board/basic/list.skin.php:65
 msgid "현재 페이지 게시물 전체"
-msgstr ""
+msgstr "現在のページの記事の検索結果"
 
 #: skin/board/basic/list.skin.php:69
 msgid "번호"
-msgstr ""
+msgstr "No."
 
 #: skin/board/basic/list.skin.php:70 skin/board/basic/list.skin.php:168
 #: skin/board/basic/write.skin.php:99 skin/board/basic/write.skin.php:102
 msgid "제목"
-msgstr ""
+msgstr "タイトル"
 
 #: skin/board/basic/list.skin.php:71 skin/board/basic/list.skin.php:173
 msgid "글쓴이"
-msgstr ""
+msgstr "ライター"
 
 #: skin/board/basic/list.skin.php:72 skin/board/basic/view.skin.php:30
 msgid "조회"
-msgstr ""
+msgstr "朝会"
 
 #: skin/board/basic/list.skin.php:73 skin/board/basic/view.skin.php:82
 msgid "추천"
-msgstr ""
+msgstr "置き換え候補のリスト"
 
 #: skin/board/basic/list.skin.php:74 skin/board/basic/view.skin.php:83
 msgid "비추천"
@@ -178,16 +176,16 @@ msgstr ""
 
 #: skin/board/basic/list.skin.php:92 skin/board/basic/write.skin.php:30
 msgid "공지"
-msgstr ""
+msgstr "鞏志"
 
 #: skin/board/basic/list.skin.php:124 skin/board/basic/view.skin.php:29
 #: skin/board/basic/view_comment.skin.php:31
 msgid "댓글"
-msgstr ""
+msgstr "コメント"
 
 #: skin/board/basic/list.skin.php:136
 msgid "게시물이 없습니다."
-msgstr ""
+msgstr "利用可能な CRL がありません。"
 
 #: skin/board/basic/list.skin.php:146
 msgid "선택삭제"
@@ -195,29 +193,28 @@ msgstr ""
 
 #: skin/board/basic/list.skin.php:146
 msgid "선택복사"
-msgstr ""
+msgstr "選択コピー"
 
 #: skin/board/basic/list.skin.php:147
 msgid "선택이동"
-msgstr ""
+msgstr "選択移動"
 
 #: skin/board/basic/list.skin.php:160
-#, fuzzy
 msgid "게시물 검색"
 msgstr "検索"
 
 #: skin/board/basic/list.skin.php:166
 msgid "검색대상"
-msgstr ""
+msgstr "検索"
 
 #: skin/board/basic/list.skin.php:169
 #: skin/board/basic/view_comment.skin.php:103
 msgid "내용"
-msgstr ""
+msgstr "内容"
 
 #: skin/board/basic/list.skin.php:170
 msgid "제목+내용"
-msgstr ""
+msgstr "タイトル + 内容"
 
 #: skin/board/basic/list.skin.php:171
 msgid "회원아이디"
@@ -225,15 +222,13 @@ msgstr ""
 
 #: skin/board/basic/list.skin.php:172
 msgid "회원아이디(코)"
-msgstr ""
+msgstr "鼻"
 
 #: skin/board/basic/list.skin.php:174
 msgid "글쓴이(코)"
-msgstr ""
+msgstr "鼻"
 
 #: skin/board/basic/list.skin.php:176
-#, fuzzy
-#| msgid "검색"
 msgid "검색어"
 msgstr "クエリ文字"
 
@@ -242,13 +237,12 @@ msgstr "クエリ文字"
 #: skin/board/basic/view_comment.skin.php:123
 #: skin/board/basic/write.skin.php:59 skin/board/basic/write.skin.php:69
 #: skin/board/basic/write.skin.php:74 skin/board/basic/write.skin.php:99
-#, fuzzy
 msgid "필수"
 msgstr "クエリ文字"
 
 #: skin/board/basic/list.skin.php:216
 msgid "할 게시물을 하나 이상 선택하세요."
-msgstr ""
+msgstr "する記事を1つ以上選択してください。"
 
 #: skin/board/basic/list.skin.php:231
 msgid ""
@@ -256,16 +250,17 @@ msgid ""
 "니다\\n\\n답변글이 있는 게시글을 선택하신 경우\\n답변글도 선택하셔야 게시글"
 "이 삭제됩니다."
 msgstr ""
+"選択した記事を削除しますか? \\n\\n 一度削除されたデータは回復できません]、[n"
+"\\n の回答の返信の投稿を選択する場合は、$ n 回答の返信を選択する必要がありま"
+"す投稿が削除されます。"
 
 #: skin/board/basic/view.skin.php:27
 msgid "페이지 정보"
-msgstr ""
+msgstr "ページ情報"
 
 #: skin/board/basic/view.skin.php:28
-#, fuzzy
-#| msgid "접속자"
 msgid "작성자"
-msgstr "接続者"
+msgstr "作者"
 
 #: skin/board/basic/view.skin.php:31
 msgid "작성일"
@@ -273,15 +268,15 @@ msgstr ""
 
 #: skin/board/basic/view.skin.php:35
 msgid "본문"
-msgstr ""
+msgstr "以下本文"
 
 #: skin/board/basic/view.skin.php:113
 msgid "첨부파일"
-msgstr ""
+msgstr "添付ファイル"
 
 #: skin/board/basic/view.skin.php:126
 msgid "회 다운로드"
-msgstr ""
+msgstr "ダウンロード"
 
 #: skin/board/basic/view.skin.php:140
 msgid "관련링크"
@@ -289,33 +284,31 @@ msgstr ""
 
 #: skin/board/basic/view.skin.php:155
 msgid "회 연결"
-msgstr ""
+msgstr "回接続"
 
 #: skin/board/basic/view.skin.php:173 skin/board/basic/view_comment.skin.php:66
-#, fuzzy
-#| msgid "정보수정"
 msgid "수정"
-msgstr "情報の変更"
+msgstr "水晶"
 
 #: skin/board/basic/view.skin.php:174 skin/board/basic/view_comment.skin.php:67
 msgid "삭제"
-msgstr ""
+msgstr "削除"
 
 #: skin/board/basic/view.skin.php:175
 msgid "복사"
-msgstr ""
+msgstr "コピー"
 
 #: skin/board/basic/view.skin.php:176
 msgid "이동"
-msgstr ""
+msgstr "移動、"
 
 #: skin/board/basic/view.skin.php:182 skin/board/basic/view_comment.skin.php:65
 msgid "답변"
-msgstr ""
+msgstr "回答"
 
 #: skin/board/basic/view.skin.php:188
 msgid "이전글"
-msgstr ""
+msgstr "以前の記事"
 
 #: skin/board/basic/view.skin.php:188
 msgid "이전글제목입니다."
@@ -327,15 +320,15 @@ msgstr ""
 
 #: skin/board/basic/view.skin.php:189
 msgid "다음글제목입니다."
-msgstr ""
+msgstr "次の文章のタイトルです。"
 
 #: skin/board/basic/view.skin.php:213
 msgid "다운로드 권한이 없습니다.\\n회원이시라면 로그인 후 이용해 보십시오."
-msgstr ""
+msgstr "ダウンロード権限がありません。 n 会員はログイン後ご利用ください。"
 
 #: skin/board/basic/view.skin.php:217
 msgid "파일을 다운로드 하시면 포인트가 차감("
-msgstr ""
+msgstr "ファイルをダウンロードするとポイントが減点 ("
 
 #: skin/board/basic/view.skin.php:217
 msgid ""
@@ -345,15 +338,15 @@ msgstr ""
 
 #: skin/board/basic/view.skin.php:287
 msgid "이 글을 비추천하셨습니다."
-msgstr ""
+msgstr "イーグルを非推奨としています。"
 
 #: skin/board/basic/view.skin.php:290
 msgid "이 글을 추천하셨습니다."
-msgstr ""
+msgstr "この記事を推薦しています。"
 
 #: skin/board/basic/view_comment.skin.php:10
 msgid "댓글목록"
-msgstr ""
+msgstr "コメント一覧"
 
 #: skin/board/basic/view_comment.skin.php:31
 msgid "댓글의"
@@ -365,31 +358,29 @@ msgstr ""
 
 #: skin/board/basic/view_comment.skin.php:79
 msgid "등록된 댓글이 없습니다."
-msgstr ""
+msgstr "登録されたコメントはありません。"
 
 #: skin/board/basic/view_comment.skin.php:90
 msgid "댓글쓰기"
-msgstr ""
+msgstr "コメントを書く"
 
 #: skin/board/basic/view_comment.skin.php:104
 #: skin/board/basic/write.skin.php:127
-#, fuzzy
-#| msgid "관리자"
 msgid "글자"
-msgstr "管理者"
+msgstr "列"
 
 #: skin/board/basic/view_comment.skin.php:122
 #: skin/board/basic/write.skin.php:69 skin/board/basic/write.skin.php:70
 msgid "이름"
-msgstr ""
+msgstr "名"
 
 #: skin/board/basic/view_comment.skin.php:131
 msgid "동시등록"
-msgstr ""
+msgstr "同時登録"
 
 #: skin/board/basic/view_comment.skin.php:140
 msgid "비밀글사용"
-msgstr ""
+msgstr "秘密文章を使用する"
 
 #: skin/board/basic/view_comment.skin.php:141
 msgid "댓글등록"
@@ -403,12 +394,12 @@ msgstr ""
 #: skin/board/basic/view_comment.skin.php:187
 #: skin/board/basic/write.skin.php:223 skin/board/basic/write.skin.php:229
 msgid "가 포함되어있습니다"
-msgstr ""
+msgstr "%1は存在しません。"
 
 #: skin/board/basic/view_comment.skin.php:201
 #: skin/board/basic/write.skin.php:241
 msgid "글자 이상 쓰셔야 합니다."
-msgstr ""
+msgstr "文字以上書く必要があります。"
 
 #: skin/board/basic/view_comment.skin.php:205
 #: skin/board/basic/write.skin.php:245
@@ -416,107 +407,100 @@ msgid "글자 이하로 쓰셔야 합니다."
 msgstr ""
 
 #: skin/board/basic/view_comment.skin.php:211
-#, fuzzy
-#| msgid "검색어는 두글자 이상 입력하십시오."
 msgid "댓글을 입력하여 주십시오."
-msgstr "キーワードは2文字以上入力してください。"
+msgstr "コメントを入力してください。"
 
 #: skin/board/basic/view_comment.skin.php:220
 msgid "이름이 입력되지 않았습니다."
-msgstr ""
+msgstr "名が入力されていません。"
 
 #: skin/board/basic/view_comment.skin.php:231
 msgid "비밀번호가 입력되지 않았습니다."
-msgstr ""
+msgstr "パスワードが入力されていません。"
 
 #: skin/board/basic/view_comment.skin.php:294
 msgid "이 댓글을 삭제하시겠습니까?"
-msgstr ""
+msgstr "このコメントを削除しますか?"
 
 #: skin/board/basic/write.skin.php:50
 msgid "답변메일받기"
-msgstr ""
+msgstr "回答メールを受信する"
 
 #: skin/board/basic/write.skin.php:59
 msgid "분류"
-msgstr ""
+msgstr "分類"
 
 #: skin/board/basic/write.skin.php:61
 msgid "분류를 선택하세요"
-msgstr ""
+msgstr "分類を選択してください"
 
 #: skin/board/basic/write.skin.php:74 skin/board/basic/write.skin.php:75
 msgid "비밀번호"
-msgstr ""
+msgstr "パスワード"
 
 #: skin/board/basic/write.skin.php:79 skin/board/basic/write.skin.php:80
 msgid "이메일"
-msgstr ""
+msgstr "コピー"
 
 #: skin/board/basic/write.skin.php:86 skin/board/basic/write.skin.php:87
 msgid "홈페이지"
-msgstr ""
+msgstr "ホームページ"
 
 #: skin/board/basic/write.skin.php:93
 msgid "옵션"
-msgstr ""
+msgstr "オプション"
 
 #: skin/board/basic/write.skin.php:108
 msgid "임시 저장된 글 목록"
-msgstr ""
+msgstr "一時保存されている記事一覧"
 
 #: skin/board/basic/write.skin.php:110
 msgid "닫기"
-msgstr ""
+msgstr "閉じる"
 
 #: skin/board/basic/write.skin.php:122
 msgid "이 게시판은 최소"
-msgstr ""
+msgstr "この掲示板は最低"
 
 #: skin/board/basic/write.skin.php:122
-#, fuzzy
 msgid "글자 이상"
 msgstr "キーワードは2文字以上入力してください。"
 
 #: skin/board/basic/write.skin.php:122
 msgid "최대"
-msgstr ""
+msgstr "最大"
 
 #: skin/board/basic/write.skin.php:122
-#, fuzzy
-#| msgid "에서 설정하실 수 있습니다."
 msgid "글자 이하까지 글을 쓰실 수 있습니다."
-msgstr "で設定することができます。"
+msgstr "文字までの文章を書くことができます。"
 
 #: skin/board/basic/write.skin.php:135
 msgid "링크  #"
-msgstr ""
+msgstr "リンク"
 
 #: skin/board/basic/write.skin.php:143
 msgid "파일 #"
-msgstr ""
+msgstr "ファイル"
 
 #: skin/board/basic/write.skin.php:144
 msgid "용량"
-msgstr ""
+msgstr "Capacity:"
 
 #: skin/board/basic/write.skin.php:144
 msgid "이하만 업로드 가능"
-msgstr ""
+msgstr "アップロード"
 
 #: skin/board/basic/write.skin.php:147
-#, fuzzy
-#| msgid "검색어를 입력해주세요"
 msgid "파일 설명을 입력해주세요."
 msgstr "検索用語を入力してください"
 
 #: skin/board/basic/write.skin.php:152
 msgid "파일 삭제"
-msgstr ""
+msgstr "ファイルへ書き出す"
 
 #: skin/board/basic/write.skin.php:168
 msgid "취소"
-msgstr ""
+msgstr "キャンセル"
 
 #: skin/board/basic/write.skin.php:169
 msgid "작성완료"
@@ -527,10 +511,12 @@ msgid ""
 "자동 줄바꿈을 하시겠습니까? 자동 줄바꿈은 게시물 내용중 줄바뀐 곳을<br>태그"
 "로 변환하는 기능입니다."
 msgstr ""
+"自動改行しますか?自動改行は記事の内容の1行を変更したところを<br>タグに変換す"
+"る機能です。"
 
 #: skin/board/basic/write.skin.php:223
 msgid "제목에 금지단어"
-msgstr ""
+msgstr "件名"
 
 #: skin/board/basic/write.skin.php:241 skin/board/basic/write.skin.php:245
 msgid "내용은"
@@ -538,11 +524,11 @@ msgstr ""
 
 #: tail.php:40
 msgid "회사소개"
-msgstr ""
+msgstr "会社概要"
 
 #: tail.php:41
 msgid "개인정보처리방침"
-msgstr ""
+msgstr "個人情報処理方針"
 
 #: tail.php:42
 msgid "서비스이용약관"
@@ -550,15 +536,15 @@ msgstr ""
 
 #: tail.php:43
 msgid "모바일버전"
-msgstr ""
+msgstr "モバイル版"
 
 #: tail.php:46
 msgid "소유하신 도메인."
-msgstr ""
+msgstr "所有するドメイン。"
 
 #: tail.php:49
 msgid "상단으로"
-msgstr ""
+msgstr "トップ"
 
 #~ msgid "한국어"
 #~ msgstr "韓国語"
