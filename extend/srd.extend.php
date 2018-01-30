@@ -193,19 +193,19 @@ $srd_lang = $_SESSION['lang'];
 //언어분류 (기본 언어는 추가해서 사용가능) 한국어는 기본언어라 생략 아래는 언어셋 이름 예제
 /*
     ko
-    en
-    ja
+    en_US
+    ja_JP
     zh_CN
  */
 //사용할 언어셋을 선택 배열로 추가가능 (기본은 한국어 / 영어 / 일본어)
 $iu_lnagType = array(
-    'en','ja','zh_CN'
+    'en_US','ja_JP','zh_CN'
 );
 //메뉴 구성을 위한 배열 (기본은 한국어 / 영어 / 일본어)
 $iu_lnagMenu = array(
     'ko' => '한국어' ,
-    'en' => '영어' ,
-    'ja' => '일본어' ,
+    'en_US' => '영어' ,
+    'ja_JP' => '일본어' ,
     'zh_CN' => '중국어' ,
 );
 

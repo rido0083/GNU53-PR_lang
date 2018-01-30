@@ -20,7 +20,15 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 $return_uri = $_SERVER['REQUEST_URI'];
 ?>
-
+<!-- 언어변경 -->
+<script>
+    function change_lang(lang, url) {
+        var f = document.change;
+        f.action = '<?php echo G5_URL?>/srd/change_lang.php?l='+lang+'&u='+url;
+        console.log(url);
+        f.submit();
+    }
+</script>
 <!-- 상단 시작 { -->
 <div id="hd">
     <h1 id="hd_h1"><?php echo $g5['title'] ?></h1>
@@ -140,7 +148,7 @@ $return_uri = $_SERVER['REQUEST_URI'];
                     <?php
                     foreach ($iu_lnagMenu as $key => $val) {
                     ?>
-                        <div><a href="?locale=<?php echo $key?>"><?php echo _($val)?></a></div>
+                        <div><a onclick="change_lang('<?php echo $key?>' , '<?php echo $return_uri?>')"><?php echo _($val)?></a></div>
                     <?php
                     }
                     ?>
