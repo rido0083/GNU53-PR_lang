@@ -176,16 +176,35 @@ INSERT INTO `{$srd['srd_lang']}` (`id`, `include`, `lang`, `tokey`, `getval`) VA
     @sql_query($input_sql);
 }
 
+
+// 언어 설정
+$locale = "ko_KR";
+if (isset($_GET["locale"]))
+    $locale = $_GET["locale"];
+else if (isset($_SESSION["locale"]))
+    $locale = $_SESSION["locale"];
+set_session('locale', $locale);
+putenv("LANG={$locale}");
+setlocale(LC_ALL, "$locale.UTF-8");
+
+$domain = "gnuboard5";
+bindtextdomain($domain, G5_PATH.'/locale');
+textdomain($domain);
+
 //언어셋을 선택한다.
+/*
 function lang_ch ($l) {
     session_start($l);
     $_SESSION['lang'] = $l;
+    $locale = $l;
+    $_SESSION["locale"] = $l;
     goto_url($_SERVER["PHP_SELF"]);
 }
-
+*/
 //기본언어를 한국어로 선택
 if (!$_SESSION['lang']) {
-    $_SESSION['lang'] = 'ko';
+    $_SESSION['lang'] = 'ko_KR';
+    $_SESSION['locale'] = 'ko_KR';
 }
 
 $srd_lang = $_SESSION['lang'];
@@ -203,7 +222,7 @@ $iu_lnagType = array(
 );
 //메뉴 구성을 위한 배열 (기본은 한국어 / 영어 / 일본어)
 $iu_lnagMenu = array(
-    'ko' => '한국어' ,
+    'ko_KR' => '한국어' ,
     'en_US' => '영어' ,
     'ja_JP' => '일본어' ,
     'zh_CN' => '중국어' ,
